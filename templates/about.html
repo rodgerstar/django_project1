@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h2>about</h2>
+{% extends 'master.html' %}
 
-</body>
-</html>
+{% block title %}
+    <title>About us</title>
+{% endblock %}
+
+
+{% block content %}
+    <h2>our team</h2>
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo mollitia, nesciunt qui quis repellendus reprehenderit veritatis vitae voluptatem! Beatae consectetur consequuntur corporis dolores error ipsam odio porro quas, quo.</span></p>
+    
+    <h2> our products</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque earum ipsum, laboriosam non tenetur. Aliquid dicta dignissimos ea id ipsam modi perferendis sequi. Incidunt omnis quas rem sapiente ullam!</p>
+    
+{% endblock %}

@@ -1,3 +1,5 @@
+import datetime
+
 from django.shortcuts import render
 
 # Create your views here.
@@ -9,4 +11,8 @@ def about(request):
     return render(request, 'about.html')
 
 def services(request):
-    return render(request, 'services.html')
+    our_services = ['home designs', 'ui/ux' 'web developer']
+    prices = 20000
+    date = datetime.date.today()
+    return render(request, 'services.html',
+                  {'services': our_services, 'date': date, 'prices': prices})
